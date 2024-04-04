@@ -1,0 +1,1370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 300vh;
+}
+.header1{
+    display: flex;
+    justify-content: space-between;
+    height: 7.5em !important;
+}
+.header3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+#search-Box{
+    width: 93%;
+    height: 100%;
+    font-size: 1.3em;
+}
+#search-Box:focus,#searchBox:focus{
+    outline: 1.5px solid green;
+}
+.search-icon{
+    width: 10%;
+    color: white;
+    font-size: 1.5em !important;
+}
+.search{
+    width: 36%;
+    height: 2.4em;
+    background-color: #61a06f;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    align-self: flex-end;
+}
+.header2{
+    width: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 0;
+}
+.header1 >*{
+    margin: 45px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.nav1{
+    margin-top: 15px;
+    width: 100%;
+    height: 5em;
+    background-image: url(img/images.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.ul{
+    display: flex;
+    width: 60%;
+}
+.homeLI,.booksLI, .newReleaseLI{
+    border-right: 1px solid white; 
+}
+.bestSellingLI,.booksLI, .newReleaseLI{
+    border-left: 1px solid white;
+}
+.ul li{
+    flex: 1;
+    text-align: center;
+}
+.ul a{
+    color: aliceblue;
+    font-size: 1.5em;
+}
+ul{
+    list-style-type: none;
+}
+.signupBut:hover{
+    font-weight: bold;
+}
+.home:hover,.books:hover,.aboutus:hover,.bestSelling:hover,.search-icon .fa-search:hover,.fa-bars:hover{
+    color: rgb(47, 90, 47);
+}
+a{
+    padding: 4px;
+    text-decoration: none;
+    color: black;
+}
+.account{
+    position: absolute;
+    top: 43px;
+    right: 20px;
+    width: 160px;
+    height: 90px;
+    background-color: white;
+    display: none;
+}
+.account ul{
+    width: 100%;
+}
+.account *{
+    width: 100%;
+    padding: 3px;
+    border: 1px solid green;
+}
+.fa-user:hover{
+    color: rgb(47, 90, 47);
+}
+.fa-heart:hover{
+    color: red;
+}
+.searchMain1{
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    height: 350vh;
+    width: 100%;
+    display: none;
+}
+.Search{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin-top: 100px;
+    width: 50%;
+    height: 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #61a06f;
+}
+#searchBox{
+    width: 95%;
+    height: 100%;
+}
+/* homepage main start */
+.homepageMain{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 41.5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.span1 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  font-size: 5em;
+  font-weight: bold;
+  margin-left: 1em;
+}
+.homepagediv{
+    width: 48%;
+    height: 420px;
+    display: flex;
+    padding-left: 150px;
+    flex-direction: column;
+}
+.but {
+    padding: 10px 20px;
+    width: 110px;
+    background: #c79572;
+    color: #fff;
+    border: none;
+    margin-top: -5px;
+    margin-left: -5px;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    text-align: center;
+  }
+.homepageMain1{
+    text-align: center;
+    margin-top: 0.5em;
+    display: flex;
+    background-color: #eee;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 50em;
+}
+.homepageMain1 > h2,.homepageMain1NewRelease h2{
+    margin-top: 1em;
+    font-size: 3em;
+    margin-bottom: 1em;
+    text-decoration: 5px underline green;
+}
+.homepageMain1 > span{
+    font-size: 1.4em;
+    margin-bottom: 0em;
+}
+.homepageMain1 > a{
+    font-size: 1.4em;
+    margin-top: 0em;
+}
+.homepageMain1Div{
+    height: 63%;
+    margin-top: 16px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 2.4em;
+    overflow: auto;
+    scrollbar-width: none;
+    position: relative;
+}
+.homepageMain1Div::-webkit-scrollbar{
+    display: none;
+}
+.box{
+    width: 20em;
+    height: 90%;
+    margin-top: 15px;
+    -webkit-box-shadow: 0 0 5px gray;
+    box-shadow: 0 0 5px gray;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.box1{
+    height: 30em;
+    margin-top: 1em;
+    width: 20em;
+    margin-left: 1em;
+
+}
+.content{
+    width: 100%;
+}
+.content *{
+    margin-top: 2px;
+    margin-bottom: 2x;
+}
+.price{
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+.Bookimage{
+    background-image: url(img/book1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 63%;
+    height: 74%;
+    margin-top: 1em;
+}
+.star1{
+    color:orange;
+    font-size: 1.3em;
+}
+.header2 *{
+    flex: 1;
+    text-align: center;
+}
+.fa-bars{
+    margin-right: 30px;
+    font-size: 20px !important;
+    flex-shrink: 0;
+    color: white;
+    display: none;
+    visibility: hidden;
+}
+.ul:has(+ .fa-bars:hover), .ul:hover{
+    display: flex;
+}
+.fa-chevron-right,.fa-chevron-left{
+    position: absolute;
+    margin-top: 150px;
+}
+.fa-chevron-right{
+    right: 5px;
+}
+.fa-chevron-left{
+    left: 5px;
+}
+.Bookimage1,.Bookimage2,.Bookimage3,.Bookimage4,.Bookimage5,.Bookimage6,.Bookimage7{
+    opacity: 0.9;
+    position: relative;
+    background-size: cover;
+    margin-top: 10px;
+}
+.Bookimage1:hover,.Bookimage2:hover,.Bookimage3:hover,.Bookimage4:hover,.Bookimage5:hover,.Bookimage6:hover,.Bookimage7:hover{
+    opacity: 1;
+}
+.Bookimage1{
+    top: 7em;
+    height: 25em;
+    width: 17em;
+    left: 7em;
+}
+.Bookimage2{
+    top: -400px;
+    left: 410px;
+    height: 25em;
+    width: 17em;
+}
+.Bookimage3{
+    top: -390px;
+    left: 410px;
+    height: 13em;
+    width: 17em;
+}
+.Bookimage4{
+    top: -1000px;
+    left: 700px;
+    height: 25em;
+    width: 17em;
+}
+.Bookimage5{
+    top: -998px;
+    left: 700px;
+    height: 12em;
+    width: 17em;
+}
+.homepagediv3{
+    width: 54%;
+    height: 100%;
+}
+.homepageMain1NewRelease{
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    background-color: #eee;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 44em;
+}
+.homepageMain1DivNewRelease{
+    height: 73%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    
+    overflow: auto;
+    gap: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.homepageMain1DivNewRelease::-webkit-scrollbar{
+    display: none;
+}
+.fa-chevron-right,.fa-chevron-left{
+    font-size: 25px !important;
+}
+.fa-chevron-right:hover,.fa-chevron-left:hover,.books:hover{
+    color: green;
+}
+.homepageMain1Genre{
+    height: 60em;
+}
+.homepageMain1Genre h2,.homepageMain1Genre >span{
+    font-size: 2.5em;
+}
+.homepageMain1DivGenre{
+    margin-left: 30px;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 88%;
+    gap: 25px;
+}
+.homepageMain1DivGenre span{
+    font-size: 1.3em;
+}
+.genre,.genre1,.genre2,.genre3,.genre4,.genre5,.genre6,.genre7{
+    width: 23vmax;
+    height: 30vmin;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.genre{
+    background-image: url(img/romance.png);
+}
+.genre1{
+    background-image: url(img/action.avif);
+}
+.genre2{
+    background-image: url(img/thriller.jpg);
+}
+.genre3{
+    background-image: url(img/bio.jpg);
+}
+.genre4{
+    background-image: url(img/horror.webp);
+}
+.genre5{
+    background-image: url(img/children.jpg);
+}
+.genre6{
+    background-image: url(img/science.jpg);
+}
+.genre7{
+    background-image: url(img/non-fictional.jpg);
+}
+.pGenre:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+.pGenre{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 10%;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 10.5em;
+}
+.logo1{
+    height: 6.3em;
+    width: 6.5em;
+}
+/* homepage main end */
+/* homepage footer start */
+.homepagefooter{
+    width: 100%;
+    height: 360px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 27px;
+}
+.about a{
+    color: #69707a;
+}
+.homepagefooter >*{
+    margin-top: 50px;
+    height: 84%;
+}
+.homepagefooter li:hover,.homepagefooter a:hover{
+    color: #61a06f;
+}
+.Privacy-Terms{
+    width: 100%;
+}
+.footer1{
+    width: 20em;
+    display: flex;
+    height: 11em;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 2px solid grey;
+}
+.lo1{
+    margin-top: 0.5em;
+    display: flex;
+    align-self: center;
+    width: 70%;
+    justify-content: space-evenly;
+}
+.lo1 i{
+    font-size: 1.5em !important;
+    color: #69707a;
+}
+.logoo{
+    height: 5em;
+    width: 7em;
+    align-self: center;
+}
+.My_Account{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.MyAccount1 *,.Need_Help *,.about *{
+    margin-top: 0.4em;
+}
+.lo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*login start css*/
+.loginMain1,.signupMain1{
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    height: 400vh;
+    width: 100%;
+    display: none;
+}
+
+.loginMain,.signupMain{
+    background-color: white;
+    position: fixed;
+    margin-top: 10em;
+    height: 40em;
+    width: 35em;
+    -webkit-box-shadow: 0 0 10px gray;
+            box-shadow: 0 0 10px gray;
+}
+.logo,.online,.loginh1,.loginh2,.signuph1,.signuph3{
+    margin-left: 20px;
+}
+.loginh1,.loginh2,.loginh3,.signuph1,.signuph3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.loginh1,.signuph1{
+    font-weight: bold;
+    font-size: 3.5em;
+}
+.loginh2{
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.loginh3,.signuph3{
+    width: 100%;
+    text-align: center;
+    color: gray;
+    font-size: 1.4em;
+}
+.search3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 62%;
+}
+.forgetpass{
+    font-size: 1.4em !important;
+}
+.email,.password{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 2em;
+}
+.email{
+    font-weight: bold;
+}
+.password{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.email1{
+    margin-left: 20px;
+    width: 90%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.password1{
+    width: 100%;
+}
+.fa-eye{
+    width: 5%;
+    margin: 0;
+    margin-left: -30px !important;
+    font-size: 1.5em !important;
+}
+.pass{
+    display: inline-block;
+    height: 45px !important;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 20px;
+    font-size: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1ch;
+}
+.email1:focus, .pass:focus{
+    outline: 2px solid green;
+    border: none;
+}
+.star{
+    color: red;
+    font-size: 20px;
+}
+.forgetpass{
+    display: block;
+    width: 95%;
+    text-align: right;
+    color: orangered;
+    font-size: 1em;
+}
+.submit{
+    background-image: url(img/rev.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    font-weight: bold;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 20px;
+    height: 2em;
+    margin-left: 25px;
+    margin-right:25px;
+    margin-top: 30px;
+}
+.submit:hover,.all:hover{
+    color: rgb(47, 90, 47);
+}
+.dontHaveAccount{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+}
+.fa-times{
+    position: absolute;
+    top: 0.5rem;
+    right: 2.5rem;
+    color: black;
+    position: fixed;
+    font-size: 2.3em !important;
+}
+.fa-times:hover{
+    color: green;
+}
+.signupopen{
+    color: orangered;
+    text-decoration: underline;
+}
+.HOME,.BOOKS,.ABOUTUS{
+    border: 2px solid white;
+}
+/*login end css*/
+
+/*signup start css*/
+.signupMain{
+    height: 43em;
+    width: 35em;
+    margin-top: 10em;
+}
+.search3Signup{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+}
+.checkbox{
+    margin-right: 20px;
+}
+.term{
+    text-decoration: underline;
+    color: blue;
+}
+.check{
+    margin-top: 15px;
+    display: flex; 
+    margin-left: 20px;
+    width: 80%;
+    justify-content: space-between;
+    font-size: 1.3em;
+}
+.name{
+    display: flex;
+    width: 90%;
+}
+.firstname,.lastname{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.fname,.lname,.forgetpass{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.fname1,.lname1{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 90%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+}
+.fa-eye{
+    width: 5%;
+    margin: 0;
+    margin-left: -23px;
+}
+.pass{
+    display: inline-block;
+    height: 45px;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1ch;
+    font-size: 1.2em;
+}
+.email1Sign:focus, .pass:focus,.fname1:focus,.lname1:focus,.passsign:focus,.email1Sign:focus{
+    outline: 2px solid green;
+    border: none;
+}
+.email1Sign{
+    margin-left: 20px;
+    width: 90%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+.passsign{
+    display: inline-block;
+    height: 30px;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1ch;
+    height: 45px;
+    font-size: 1.2em;
+}
+.submitsignup{
+    background-image: url(img/rev.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    height: 43px;
+    margin-left: 25px;
+    margin-right:25px;
+    margin-top: 20px;
+}
+.submitsignup:hover{
+    color: rgb(47, 90, 47);
+}
+/*signup end css*/
+
+
+
+/*About start css*/
+.aboutmain *{
+    margin: 30px;
+    font-size: 1.3em;
+}
+.aboutmain{
+    background-color: white;
+    margin: 30px;
+}
+.aboutUl{
+    list-style-type: circle;
+    color: green;
+}
+/*About end css*/
+
+/*bookdes start css*/
+
+
+.imgUser{
+    display: none;
+}
+.BooksmainAll{
+    height: auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    overflow: auto;
+    background-color: white;
+    margin: 40px;
+    gap: 10px;
+    margin-top: 60px;
+}
+.boxBooks{
+    width: 290px;
+    height: 80%;
+    margin: 15px;
+    padding: 0;
+    -webkit-box-shadow: 0 0 5px gray;
+    box-shadow: 0 0 5px gray;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.author{
+    text-align: center;
+}
+.boxBooks img{
+    margin: 0 !important;
+    width: 30px;
+}
+.buttondiv{
+    border: 3px solid #c79572;
+    width: 10em;
+    height: 100em !important;
+    border-radius: 4px;
+    margin-left: 5em;
+}
+.signupBut{
+    padding: 10px 20px;
+    width: 150px;
+    font-size: 1.3em;
+    height: 50px;
+    background: #c79572;
+    color: #fff;
+    border: none;
+    margin-top: -5px;
+    margin-left: -2px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    margin-right: 5px;
+  }
+
+.sort {
+    background-color: #c79572;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 10em;
+    right: 5em;
+    height: 2em;
+    align-items: center;
+  }
+  .Booksmain{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 150em;
+    background-color: #eee;
+  }
+  .sort:hover{
+    color: #468d59;
+  }
+  .sort-option:hover,.optionGenre div:hover{
+    text-decoration: underline #468d59;
+  }
+  .sort-options {
+    display: flex;
+    position: absolute; 
+    background-color: #fff;
+    min-width: 150px;
+    top: 9em;
+    right: 5em;
+    height: 3em;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+    z-index: 1000;
+    font-size: 2em;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px;
+    display: none;
+  }
+  .sort-option{
+    width: 100%;
+    text-align: center;
+    -webkit-box-shadow: 0 0 2px gray;
+    box-shadow: 0 0 3px gray;
+    height: 49%;
+  }
+.sort:hover + .sort-options,.sort-options:hover{
+    display: block;
+  }
+  .optionGenre{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: absolute; 
+    background-color: #fff;
+    min-width: 150px;
+    font-size: 0.9em;
+    top: 3.2em;
+    right: 2em;
+    height: 7em;
+    width: 25em;
+    z-index: 1000;
+    padding: 10px;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+    visibility: hidden;
+  }
+  .Genre:hover + .optionGenre,.optionGenre:hover{
+    visibility: visible;
+  }
+  .all,.all1{
+    height: 3em;
+    font-size: 1.5em;
+    position: absolute;
+    top: 10em;
+    left: 3em;
+  }
+  .all1{
+    top: 10.2em;
+    left: 5em;
+    color: gray;
+  }
+  .all1::before {
+    content: "";
+    position: absolute;
+    left: 50px; 
+  }
+.fa-bars{
+    color: rgb(5, 5, 4);
+    z-index: 1000;
+    visibility: visible;
+    float: right;
+    display: none !important;
+    font-size: 1.6em !important;
+}
+/* homepage footer end */
+@media (max-width: 1400px){
+    .homepageMain1DivGenre{
+        margin-top: 20px;
+    }
+    .homepageMain1Genre{
+        height: 69em;
+    }
+    .loginh1,.signuph1{
+        font-size: 2.5em;
+    }
+    .loginh2,.loginh3,.signuph3{
+        font-size: 1em;
+    }
+
+    .forgetpass{
+        font-size: 1em !important;
+    }
+    .email,.password{
+        font-size: 1.2em;
+    }
+    .email1,.pass,.submit{
+        font-size: 1em;
+    }
+    .loginMain,.signupMain{
+        width: 29em;
+       
+        height: 35em;
+    }
+    .homepagefooter{
+        font-size: 20px;
+    }
+    .homepageMain1NewRelease h2,.homepageMain1Genre h2,.homepageMain1Genre >span{
+        font-size: 2em;
+    }
+    .homepageMain1{
+        height: 33em;
+    }
+    .homepageMain1 h2{
+        font-size: 1.5em;
+    }
+    .price,.homepageMain1 >span,.homepageMain1 >a{
+        font-size: 1.2em;
+    }
+    .box{
+        width: 13em;
+    }
+    .box h1{
+        font-size: 1.3em;
+    }
+    #search-Box{
+        width: 90%;
+    }
+    .fa-bars{
+        display: flex !important;
+        color: white;
+    }
+    .ul{
+        position: absolute;
+        top: 9.5em;
+        right: 1em;
+        height: 11em;
+        background-color: white;
+        flex-direction: column;
+        -webkit-box-shadow: 0 0 10px gray;
+        box-shadow: 0 0 10px gray;
+        width: 12.5em;
+        padding: 1em;
+        display: none;
+        z-index: 1000; 
+    }
+    .fa-bars:hover + .ul{
+        display: flex;
+    }
+    .ul a{
+        border-color: #468d59 !important;
+    }
+    .ul *{
+        color: black !important;
+        font-size: 0.8em;
+        margin: 0.2em;
+    }
+    .homepageMain{
+        height: 30em;
+    }
+    .but {
+        padding: 10px 20px;
+        width: 110px;
+        background: #c79572;
+        color: #fff;
+        border: none;
+        margin-top: -5px;
+        margin-left: -5px;
+        border-radius: 4px;
+        margin-bottom: 2px;
+        margin-right: 10px;
+        text-align: center;
+      }
+      .buttondiv{
+        height: 3.5em !important;
+      }
+      .span1 {
+      font-size: 3em;
+    }
+    .nav1{
+        
+        justify-content: flex-end;
+    }
+    .Bookimage2,.Bookimage1,.Bookimage5,.Bookimage4,.Bookimage3{
+        display: none;
+    }
+    .homepagediv3{
+        display: none;
+    }
+    .homepagediv{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        height: 420px;
+        padding-left: 0px;
+    }
+}
+@media (max-width: 1000px){
+    .homepageMain1Genre h2,.homepageMain1Genre >span{
+        font-size: 1.6em;
+    }
+    .logo{
+        justify-content: flex-start;
+    }
+    .fa-user{
+        margin-right: 0 !important;
+        font-size: 35px !important;
+    }
+    .header2 .fa-search{
+        display: block !important;
+    }
+    .log,.login_name{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .header2{
+        width: 20%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .pGenre{
+        font-size: 10px;
+    }
+    .genre,.genre1,.genre2,.genre3,.genre4,.genre5,.genre6,.genre7{
+        width: 35vmax;
+        height: 25vmin;
+    }
+    .homepageMain1Genre{
+        height: 72em;
+    }
+    .Booksmain{
+        height: 1500px;
+      }
+      .BooksmainAll{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .sort {
+        font-size: 1em;
+        top: 12em;
+    right: 2em;
+    height: 2em;
+    }
+    .all,.all1{
+        font-size: 1em;
+        top: 12.5em;
+        left: 2em;
+        height: 3em;
+      }
+      .all1{
+        top: 12.7em;
+        left: 4em;
+        color: gray;
+      }
+    .sort-options {
+        top: 10.6em;
+        right: 2em;
+        height: 3.4em;
+        font-size: 1.3em;
+    }
+    .Booksmain >h2{
+        font-size: 2em !important;
+    }
+    .homepagefooter{
+        height: 30em;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Privacy-Terms{
+        display: none;
+    }
+    .footer1{
+        border: none;
+        justify-content: space-around;
+    }
+
+}
+@media (max-width: 800px){
+    .Booksmain{
+        height: 1700px;
+      }
+      .BooksmainAll{
+        height: 90%;
+    }
+      .BooksmainAll{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .search{
+        width: 140px;
+    }
+    #search-Box{
+        width: 80%;
+    }
+    .Search{
+        width: 70%;
+    }
+    #searchBox{
+        width: 90%;
+    }
+    .homepagefooter{
+        font-size: 15px;
+    }
+    .Need_Help{
+        display: none;
+    }
+    .fa-chevron-right,.fa-chevron-left{
+        margin-top: 170px;
+        font-size: 30px !important;
+    }
+    .homepageMain1Genre{
+        height: 90em;
+        margin-left: 40px;
+    }
+    .homepageMain1 > h2,.homepageMain1NewRelease h2{
+        margin-top: 0.5em;
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+    .box1{
+        width: 20em;
+    }
+    .content h3{
+        color: black;
+    }
+}
+.NoBook{
+    display: none;
+    height: 2em;
+    width: 75em;
+    color: black;
+    position: absolute;
+    top: 28em;
+    background-color: #d5b9b8;
+    text-align: center;
+    padding-top: 0.3em;
+}
+@media (max-width: 800px) {
+    .bookdesmain { 
+      flex-direction: column;
+      height: 1100px;
+    }
+    .BookTitle{
+        position: absolute;
+        left: 1em;
+        top: 7em;
+        font-size: 1.6em !important;
+    }
+    .BookAuthor{
+        position: absolute;
+        left: 2em;
+        top: 17.5em;
+    }
+    .BookIMG{
+        margin-top: 50px;
+    }
+    .Product_Details{
+        margin-top: 30px;
+    }
+    .nav1{
+        height: 3.5em;
+    }
+    .header1{
+        height: 6em !important;
+    }
+  }
+.bookdesmain {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 100px;
+    height: 100em;
+    overflow: auto;
+  }
+  .RelatedBooks{
+    margin-top: 10px;
+    display: flex;
+    background-color: #eee;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 600px;
+}.Book_Description{
+    font-size: 3em !important;
+}
+.bookdesmain1{
+    width: 170em;
+}
+.RelatedBooks1{
+    height: 73%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    overflow: auto;
+    gap: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.RelatedBooks1::-webkit-scrollbar{
+    display: none;
+}
+  .BookIMG {
+    width: 30em;
+    height: 37em;
+    margin-right: 20px;
+    border-radius: 30px;
+    border: 2px solid #c79572;
+  }
+  
+  .BookTitle {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .BookAuthor {
+    font-size: 1.5em;
+    margin-bottom: 20px; 
+  }
+  
+  .Product_Details {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    height: 13em;
+  }
+  
+  .Product_Details h3 {
+    margin-top: 0;
+  }
+  
+  .Product_Details div {
+    margin: 5px 0;
+  }
+  
+  .BookDescription {
+    line-height: 1.5;
+    font-size: 1.8em;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }.download{
+    font-size: 1.3em;
+    margin-top: 30px;
+    border-radius: 15px;
+  }
+  body{
+    color:#69707a;
+    }
+    .img-account-profile {
+        height: 10rem;
+        border-radius: 50% !important;
+    }
+    .cardbody{
+        box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+        width: 300px;
+        height: 300px;
+    }
+    .cardbody1{
+        box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 85%;
+    }
+    .fa-plus{
+        font-size: 35px !important;
+        position: relative;
+        top: -70px;
+        left: 55px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .cardheader{
+        height: 10%;
+    }
+    .card-header{
+        font-weight: 500;
+        padding: 1rem 1.35rem;
+        background-color: rgba(33, 40, 50, 0.03);
+        border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+    }
+    .card-header:first-child {
+        border-radius: 0.35rem 0.35rem 0 0;
+    }
+    .row{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+       padding: 50px;
+        height: 600px;
+    }
+    .cardbody button{
+        margin-top: 5px;
+        width: 145px;
+    }
+    .UserImg{
+        height: 3.5em;
+        width: 3.5em;
+        border: 5px solid rgb(67, 66, 66);
+        border-radius: 50%;
+    }
+

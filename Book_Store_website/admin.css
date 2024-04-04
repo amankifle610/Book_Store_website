@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: 11em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body *{
+    font-size: 1.1em;
+}
+.dropdown-wrap {
+    position: relative; 
+  }
+  
+  .dropdown-input {
+    position: absolute;
+    top: 40em;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+  }
+.info {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.checkBox{
+    display: inline-block;
+
+}
+label {
+    margin-top: 10px;
+}
+.Div{
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+.logout{
+    position: absolute;
+    top: 3em;
+    right: 4em;
+    height: 2em;
+    width: 6em;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+}.logout a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+input[type="text"],input[type="number"],textarea,select, input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
